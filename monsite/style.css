@@ -1,0 +1,77 @@
+
+html body
+{
+	height: 100%;
+	padding:0;
+	margin: 0;
+}
+
+#maincontainer
+{
+	min-height: 100%
+}
+
+/* HEADER DESIGN */
+
+#global_header
+{
+	width: 100%
+	margin: 0;
+	background-color: black;
+	display: flex;
+}
+#global_header nav
+{
+	display: flex;
+}
+
+#global_header nav ul
+{
+	list-style-type: none; margin: 0; padding: 0; width: 100%
+
+}
+
+#global_header nav ul li
+{
+
+	display:inline-block;
+	padding: 20px 0;
+}
+
+#global_header nav ul li a
+{
+	padding: 20px 20px;
+	color: white;
+	text-align: center;
+}
+#global_header nav ul li a:hover
+{
+	color: black;
+	background-color: white;
+	padding: 20px 20px;
+	text-align: center;
+}
+
+#idblock
+{
+	background-color: blue;
+}
+#maincontent
+{
+	background-color: grey;
+	width: 100%;
+	margin: 0 auto;
+}
+#sectionpart
+{
+	background-color: black;
+}
+#global_footer
+{
+	background-color: cyan;
+}
+
+section
+{
+	background-color: red;
+}

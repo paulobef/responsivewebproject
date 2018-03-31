@@ -13,6 +13,7 @@ footer {
 	bottom: 0; 
 	background-color: cyan;
 	width: 100%;
+	height: 80px;
 	margin: 0;margin-left: 0;margin-right: 0;
 }
 
@@ -21,6 +22,7 @@ footer {
 	min-height: 100%; /* 1 */
 	display:flex; /* 2 */
 	flex-direction:column; /* 3 */
+
 }
 
 #sectionpart {
@@ -43,8 +45,7 @@ footer {
 
 #global_header nav ul
 {
-	list-style-type: none; margin: 0; padding: 0; width: 100%
-
+	list-style-type: none; margin: 0; padding: 0; width: 100%;
 }
 
 #global_header nav ul li
@@ -72,9 +73,10 @@ footer {
 
 #maincontent
 {
-	background-color: grey;
+	background-color: #20A4F3;
 	width: 100%;
 	margin: 0 auto;
+	margin-bottom: 80px;
 }
 
 	/* ID DESIGN */
@@ -82,18 +84,59 @@ footer {
 #idblock
 {
 	float: left;
-	background-color: blue;
-	width: 30%;
-	position: fixed;
+	background-color: #E5E5E5;
+	max-width: 30%;
+	position: sticky; top: 10px;
 }
+
+#idblock h1
+{
+	text-align: center;
+}
+
+#idcontent
+{
+	margin: 30px;
+	padding: 20px;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #F2F2F2;
+	border-width: 0.5px;
+	box-shadow: 2px 2px 30px #1677AF;
+	background-color: white;
+}
+
+
+ul
+{
+	list-style-type: none;
+	list-style-position: center;
+}
+
+.center
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 
 	/* SECTION PART */
 
 #sectionpart
 {
+
 	background-color: black;
 	float: right;
 	width: 70%
+
+}
+
+#sectionpart header
+{
+	background-image: url("sky-animals-blue-sky-fauna.jpg");
+	height: 485px;
 }
 
 /* MAIN FOOTER DESIGN */
@@ -102,4 +145,44 @@ footer {
 section
 {
 	background-color: red;
+	margin: 30px;
 }
+
+
+/* SMALL SCREEN CSS */
+
+
+@media screen and (max-width: 640px) {
+  .block {
+    display:block;
+  }
+#idblock {
+	position: static;
+	float: none;
+	width: 100%;
+	max-width: none;
+	margin: auto;
+	
+}
+
+
+#idcontent {
+	margin: auto;
+	padding: none;
+	max-width: 100%;
+	border:none;
+	box-shadow: none;
+}
+#sectionpart{
+	float: none;
+	width: 100%;
+	margin: auto;
+}
+#sectionpart header
+{
+	background-image: none;
+	height: 0px;
+}
+}
+
+

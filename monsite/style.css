@@ -11,10 +11,35 @@ body {position: relative;}
 footer {
 	position: absolute; 
 	bottom: 0; 
-	background-color: cyan;
+	background-color: #313B42;
 	width: 100%;
 	height: 80px;
 	margin: 0;margin-left: 0;margin-right: 0;
+}
+
+h1
+{
+	font-family: 'Playfair Display', serif;
+	font-size: 2em;
+	color: #353535
+}
+h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 1.5em;
+
+}
+p
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+#iddescription
+{
+	color: grey;
+	font-size: 0.9em;
 }
 
 #maincontainer
@@ -33,47 +58,24 @@ footer {
 
 #global_header
 {
-	width: 100%
-	margin: 0;
+	width: 100%;
+	height: 80px;
 	background-color: black;
-	display: flex;
-}
-#global_header nav
-{
-	display: flex;
 }
 
-#global_header nav ul
-{
-	list-style-type: none; margin: 0; padding: 0; width: 100%;
+#global_header img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
 }
 
-#global_header nav ul li
-{
-
-	display:inline-block;
-	padding: 20px 0;
-}
-
-#global_header nav ul li a
-{
-	padding: 20px 20px;
-	color: white;
-	text-align: center;
-}
-#global_header nav ul li a:hover
-{
-	color: black;
-	background-color: white;
-	padding: 20px 20px;
-	text-align: center;
-}
 
 /* MAIN */
 
 #maincontent
 {
-	background-color: #20A4F3;
+	background-color: #F9F9F9;
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 80px;
@@ -84,9 +86,9 @@ footer {
 #idblock
 {
 	float: left;
-	background-color: #E5E5E5;
+	background-color: #F9F9F9;
 	max-width: 30%;
-	position: sticky; top: 10px;
+	position: sticky; top: 8px;
 }
 
 #idblock h1
@@ -96,21 +98,29 @@ footer {
 
 #idcontent
 {
-	margin: 30px;
-	padding: 20px;
+	margin-top: 25px;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding: 10%;
 	border-style: solid;
-	border-radius: 15px;
+	border-radius: 5px;
 	border-color: #F2F2F2;
 	border-width: 0.5px;
-	box-shadow: 2px 2px 30px #1677AF;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 	background-color: white;
+	line-height: 0.8em;
 }
 
 
 ul
 {
 	list-style-type: none;
-	list-style-position: center;
+	display: inline;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
+	color: grey;
+	line-height: 1.1em;
 }
 
 .center
@@ -127,7 +137,8 @@ ul
 #sectionpart
 {
 
-	background-color: black;
+	background-color: white;
+
 	float: right;
 	width: 70%
 
@@ -135,8 +146,8 @@ ul
 
 #sectionpart header
 {
-	background-image: url("sky-animals-blue-sky-fauna.jpg");
-	height: 485px;
+	background-image: url("archicycle.jpg");
+	height: 300px;
 }
 
 /* MAIN FOOTER DESIGN */
@@ -144,8 +155,9 @@ ul
 
 section
 {
-	background-color: red;
-	margin: 30px;
+	background-color: white;
+	margin: 50px;
+	margin-left: 10%; margin-right: 10%;
 }
 
 
@@ -162,6 +174,9 @@ section
 	width: 100%;
 	max-width: none;
 	margin: auto;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
 	
 }
 
